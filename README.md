@@ -5,7 +5,7 @@ Helios ts/js wallet to sign and broadcast messages created with heliosjs
 ## Usage
 
 ```sh
-yarn add @hanchon/helios-ts-wallet
+npm add @helios-chain-labs/helios-ts-wallet
 ```
 
 Some constants are exported as helpers but the values may not be updated for the current state of the network:
@@ -36,7 +36,7 @@ import {
   LOCALNET_CHAIN,
   LOCALNET_FEE,
   signTransaction,
-} from '@hanchon/helios-ts-wallet'
+} from '@helios-chain-labs/helios-ts-wallet'
 ;(async () => {
   const privateMnemonic =
     'pluck view carry maid bamboo river major where dutch wood certain oval order wise awkward clerk adult summer because number raven coil crunch hat'
@@ -70,7 +70,7 @@ import {
   LOCALNET_CHAIN,
   LOCALNET_FEE,
   signTransactionUsingEIP712,
-} from '@hanchon/helios-ts-wallet'
+} from '@helios-chain-labs/helios-ts-wallet'
 ;(async () => {
   const privateMnemonic =
     'pluck view carry maid bamboo river major where dutch wood certain oval order wise awkward clerk adult summer because number raven coil crunch hat'

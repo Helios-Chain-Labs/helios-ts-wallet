@@ -1,8 +1,8 @@
 {
-  "name": "@hanchon/helios-ts-wallet",
-  "version": "0.2.0",
+  "name": "@helios-chain-labs/helios-ts-wallet",
+  "version": "0.2.1",
   "description": "Helios ts/js wallet to sign and broadcast messages created with heliosjs",
-  "repository": "hanchon-live/helios-ts-wallet",
+  "repository": "helios-chain-labs/helios-ts-wallet",
   "source": "src/signer.ts",
   "main": "lib/signer.js",
   "module": "./lib/signer.module.js",
@@ -14,7 +14,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Guillermo Paoletti <guillermo.paoletti@gmail.com>",
+  "author": "Helios Chain Labs",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix"

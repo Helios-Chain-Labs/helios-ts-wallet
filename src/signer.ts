@@ -21,8 +21,8 @@ import { ethToHelios } from '@tharsis/address-converter'
 // Chain helpers
 
 export const LOCALNET_CHAIN = {
-  chainId: 9000,
-  cosmosChainId: 'helios_9000-1',
+  chainId: 4242,
+  cosmosChainId: 'helios_4242-1',
 }
 
 export const LOCALNET_FEE = {
