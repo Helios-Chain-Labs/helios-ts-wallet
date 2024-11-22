@@ -27,9 +27,9 @@ describe('send transactions to the node', () => {
       LOCALNET_FEE,
       '',
       {
-        destinationAddress: 'evmos1pmk2r32ssqwps42y3c9d4clqlca403yd9wymgr',
+        destinationAddress: 'helios1pmk2r32ssqwps42y3c9d4clqlca403yd9wymgr',
         amount: '1',
-        denom: 'aevmos',
+        denom: 'ahelios',
       },
     )
     const resMM = await signTransactionUsingEIP712(
@@ -53,9 +53,9 @@ describe('send transactions to the node', () => {
       LOCALNET_FEE,
       '',
       {
-        destinationAddress: 'evmos1pmk2r32ssqwps42y3c9d4clqlca403yd9wymgr',
+        destinationAddress: 'helios1pmk2r32ssqwps42y3c9d4clqlca403yd9wymgr',
         amount: '1',
-        denom: 'aevmos',
+        denom: 'ahelios',
       },
     )
 

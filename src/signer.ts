@@ -16,40 +16,40 @@ import {
   Chain,
 } from '@tharsis/transactions'
 import { signatureToPubkey } from '@hanchon/signature-to-pubkey'
-import { ethToEvmos } from '@tharsis/address-converter'
+import { ethToHelios } from '@tharsis/address-converter'
 
 // Chain helpers
 
 export const LOCALNET_CHAIN = {
   chainId: 9000,
-  cosmosChainId: 'evmos_9000-1',
+  cosmosChainId: 'helios_9000-1',
 }
 
 export const LOCALNET_FEE = {
   amount: '20',
-  denom: 'aevmos',
+  denom: 'ahelios',
   gas: '200000',
 }
 
 export const MAINNET_CHAIN = {
   chainId: 9001,
-  cosmosChainId: 'evmos_9001-2',
+  cosmosChainId: 'helios_9001-2',
 }
 
 export const MAINNET_FEE = {
   amount: '3000000000000000',
-  denom: 'aevmos',
+  denom: 'ahelios',
   gas: '150000',
 }
 
 export const TESTNET_CHAIN = {
   chainId: 9000,
-  cosmosChainId: 'evmos_9000-4',
+  cosmosChainId: 'helios_9000-4',
 }
 
 export const TESTNET_FEE = {
   amount: '5000',
-  denom: 'atevmos',
+  denom: 'athelios',
   gas: '600000',
 }
 
@@ -87,14 +87,14 @@ export async function getSender(
   wallet: Wallet,
   url: string = 'http://127.0.0.1:1317',
 ) {
-  const evmosAddress = ethToEvmos(wallet.address)
+  const heliosAddress = ethToHelios(wallet.address)
   const addrRequest = await fetch(
-    `${url}/cosmos/auth/v1beta1/accounts/${evmosAddress}`,
+    `${url}/cosmos/auth/v1beta1/accounts/${heliosAddress}`,
   )
   const resp = (await addrRequest.json()) as AccountResponse
 
   const sender = {
-    accountAddress: evmosAddress,
+    accountAddress: heliosAddress,
     sequence: parseInt(resp.account.base_account.sequence as string, 10),
     accountNumber: parseInt(resp.account.base_account.account_number, 10),
     pubkey:

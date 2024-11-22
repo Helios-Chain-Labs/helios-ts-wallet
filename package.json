@@ -1,8 +1,8 @@
 {
-  "name": "@hanchon/evmos-ts-wallet",
+  "name": "@hanchon/helios-ts-wallet",
   "version": "0.2.0",
-  "description": "Evmos ts/js wallet to sign and broadcast messages created with evmosjs",
-  "repository": "hanchon-live/evmos-ts-wallet",
+  "description": "Helios ts/js wallet to sign and broadcast messages created with heliosjs",
+  "repository": "hanchon-live/helios-ts-wallet",
   "source": "src/signer.ts",
   "main": "lib/signer.js",
   "module": "./lib/signer.module.js",
